@@ -1,0 +1,39 @@
+<div class="site-modal">
+  <header class="site-modal__header">
+    <p class="site-modal__title">Готовы обсудить проект?</p>
+    <button class="site-modal__btn close-btn" aria-label="Закрыть"></button>
+  </header>
+  <p class="site-modal__description">
+    Заполните форму ниже и мы свяжемся с вами.
+  </p>
+  <form class="site-modal__form">
+    <input
+      class="site-modal__input"
+      type="text"
+      name="name"
+      placeholder="Имя*"
+    />
+    <input
+      class="site-modal__input"
+      type="number"
+      name="number"
+      placeholder="Телефон*"
+    />
+    <div class="site-modal__checkbox-wrap">
+      <input
+        class="site-modal__checkbox"
+        type="checkbox"
+        name="politics"
+        id="politics"
+        checked
+      />
+      <label class="site-modal__label" htmlFor="politics">
+        Я согласен с условиями обработки
+        <a class="site-modal__link" href="#" target="blank">
+          персональных данных
+        </a>
+      </label>
+    </div>
+    <button class="site-modal__submit site-button">Отправить</button>
+  </form>
+</div>

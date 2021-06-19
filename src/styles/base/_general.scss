@@ -1,12 +1,43 @@
-h1, h2, h3, h4, h5, h6, ul {
-    margin: 0;
-    padding: 0;
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
 }
 
-.container {
-    @include container();
-    @include sm(max-width, rem(510));
-    @include md(max-width, rem(690));
-    @include lg(max-width, rem(930));
-    @include xl(max-width, rem(1110));
+body {
+  font-family: "Montserrat", Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 22px;
+  font-weight: 400;
+  color: #2b2d3a;
+  margin: 0;
+  counter-reset: advantages-list;
+}
+
+.no-scroll {
+  overflow: hidden;
+}
+
+.padding {
+  padding-top: 100px;
+
+  @media (max-width: 375px) {
+    padding-top: 64px;
+  }
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 0;
+  color: transparent;
+}
+
+.swiper-slide-active {
+  opacity: 1 !important;
 }
